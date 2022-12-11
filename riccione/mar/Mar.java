@@ -7,7 +7,8 @@ import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Scanner;
+//import java.util.Scanner;
+import riccione.mar.Scanner;
 
 public class Mar {
 
@@ -30,7 +31,7 @@ public class Mar {
         if (hadError) System.exit(65);
     }
 
-    private static void runPrompt throws IOException {
+    private static void runPrompt() throws IOException {
         InputStreamReader input = new InputStreamReader(System.in);
         BufferedReader reader = new BufferedReader(input);
 
